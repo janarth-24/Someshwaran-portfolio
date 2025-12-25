@@ -102,7 +102,9 @@ nav ul li a:hover {
   display: block;
 }
 
-/* RESPONSIVE */
+/* ===============================
+   MOBILE – ALL PHONES (DEFAULT)
+================================ */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -116,15 +118,45 @@ nav ul li a:hover {
   }
 
   .image-frame {
-    width: 220px;
+    width: 230px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
   }
 }
 
-@media (max-width: 480px) {
+/* ===============================
+   SMALL MOBILE (Galaxy A14, 320px)
+================================ */
+@media (max-width: 420px) {
+  .hero {
+    padding-top: 90px;
+  }
+
   .image-frame {
-    width: 200px;
+    width: 190px;   /* 🔑 KEY FIX */
+  }
+
+  .hero h2 {
+    font-size: 1.55rem;
+    line-height: 1.25;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
   }
 }
+
 
 /* CONTACT */
 .contact-modern {
@@ -170,3 +202,4 @@ nav ul li a:hover {
   background: var(--primary);
   color: #020617;
 }
+
