@@ -133,25 +133,30 @@ nav ul li a:hover {
 }
 
 /* ===== RESPONSIVE HERO ===== */
+/* FIX HERO IMAGE ALIGNMENT ON MOBILE */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    justify-items: center;   /* KEY FIX */
     text-align: center;
   }
 
   .hero-image {
     order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centers image */
+    align-items: center;
     margin-bottom: 30px;
   }
+}
 
-  .btn {
-    margin: 12px 6px;
-  }
-
+@media (max-width: 600px) {
   .image-frame {
-    width: 260px;
+    width: 240px; /* safe mobile size */
   }
 }
+
 
 /* ABOUT */
 .about-alt-container {
@@ -405,16 +410,5 @@ section {
 
   50% {
     transform: translateY(-8px);
-  }
-}
-@media (max-width: 900px) {
-  .hero {
-    padding-top: 60px; /* reduce from 140px */
-    min-height: auto;   /* prevents extra vertical jump */
-  }
-}
-@media (max-width: 600px) {
-  .hero {
-    padding-top: 80px;
   }
 }
