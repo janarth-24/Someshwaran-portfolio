@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 3600px) {
   .hero-text h2 {
     font-size: 1.7rem;
   }
@@ -716,6 +716,7 @@ section {
   from { transform: rotate(0); }
   to { transform: rotate(360deg); }
 }
+
 
 
 
