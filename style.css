@@ -132,33 +132,6 @@ nav ul li a:hover {
   transform: scale(1.04);
 }
 
-/* ===== RESPONSIVE HERO ===== */
-/* ===== MOBILE HERO (ALL MOBILES) ===== */
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;   /* single column */
-    text-align: center;
-  }
-
-  /* PROFILE IMAGE ON TOP */
-  .hero-image {
-    order: -1;
-    margin-bottom: 30px;
-  }
-
-  /* INCREASE FONT SIZE */
-  .hero h2 {
-    font-size: 2.1rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .image-frame {
-    width: 260px;
-  }
-}
 
 /* ABOUT */
 .about-alt-container {
@@ -632,33 +605,39 @@ section {
   background: var(--primary);
   color: #020617;
 }
-
-/* ===== RESPONSIVE (ONE MEDIA QUERY ONLY) ===== */
+/* ===== MOBILE HERO (ALL MOBILES) ===== */
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* single column */
     text-align: center;
   }
 
+  /* PROFILE IMAGE ON TOP */
   .hero-image {
     order: -1;
     margin-bottom: 30px;
   }
 
+  /* INCREASE FONT SIZE */
+  .hero h2 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
   .image-frame {
     width: 260px;
   }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 }
+
 
 /* ===== ANIMATION ===== */
 @keyframes ring {
   from { transform: rotate(0); }
   to { transform: rotate(360deg); }
 }
+
 
 
