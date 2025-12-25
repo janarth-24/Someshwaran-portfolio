@@ -50,28 +50,43 @@ nav ul li a:hover {
   color: var(--primary);
 }
 
-/* HERO */
+/* HERO (IMAGE TOP, TEXT DOWN – ALL SCREENS) */
 .hero {
-  min-height: 100vh;
-  padding: 120px 8% 0;
+  padding: 90px 8% 60px;   /* NO extra space */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  text-align: center;
+  gap: 25px;
 }
 
-.hero-text {
-  flex: 1;
+/* IMAGE */
+.hero-image {
+  display: flex;
+  justify-content: center;
 }
 
-.hero h2 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  margin-bottom: 15px;
+.image-frame {
+  width: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1a1a1a, #050505);
 }
 
-.hero p {
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
-  max-width: 520px;
+.image-frame img {
+  width: 100%;
+  display: block;
+}
+
+/* TEXT */
+.hero-text h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  max-width: 620px;
 }
 
 .btn {
@@ -82,81 +97,35 @@ nav ul li a:hover {
   color: #020617;
   border-radius: 30px;
   text-decoration: none;
+  font-weight: 500;
 }
 
-/* IMAGE */
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.image-frame {
-  width: 320px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.image-frame img {
-  width: 100%;
-  display: block;
-}
-
-/* ===============================
-   MOBILE – ALL PHONES (DEFAULT)
-================================ */
+/* IMAGE RESPONSIVE */
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 100px;
-  }
-
-  .hero-image {
-    order: -1;
-    margin-bottom: 20px;
-  }
-
   .image-frame {
-    width: 230px;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1.05rem;
+    width: 220px;
   }
 }
 
-/* ===============================
-   SMALL MOBILE (Galaxy A14, 320px)
-================================ */
 @media (max-width: 420px) {
-  .hero {
-    padding-top: 90px;
-  }
-
   .image-frame {
-    width: 190px;   /* 🔑 KEY FIX */
-  }
-
-  .hero h2 {
-    font-size: 1.55rem;
-    line-height: 1.25;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .btn {
-    padding: 10px 22px;
-    font-size: 0.9rem;
+    width: 190px;
   }
 }
 
+/* SECTIONS */
+section {
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  color: var(--primary);
+}
 
 /* CONTACT */
 .contact-modern {
@@ -202,4 +171,3 @@ nav ul li a:hover {
   background: var(--primary);
   color: #020617;
 }
-
