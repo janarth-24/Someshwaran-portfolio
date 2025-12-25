@@ -133,27 +133,86 @@ nav ul li a:hover {
 }
 
 /* ===== RESPONSIVE HERO ===== */
-/* Mobile only */
-@media (max-width: 500px) {
+/* Base layout – desktop */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 0 8%;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* ---------- RESPONSIVE (ALL DEVICES) ---------- */
+
+/* Tablets & below */
+@media (max-width: 992px) {
   .hero {
-    display: flex;
+    gap: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Phones & small tablets */
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  /* 🔼 Move profile image to TOP */
+  /* IMAGE ON TOP */
   .hero-img {
     order: -1;
     margin-bottom: 20px;
   }
 
-  /* Slight font increase */
   .hero-text h2 {
     font-size: 1.9rem;
   }
 
   .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .hero-img img {
+    max-width: 240px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .hero-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
     font-size: 1.05rem;
+  }
+
+  .hero-img img {
+    max-width: 210px;
   }
 }
 
@@ -657,5 +716,6 @@ section {
   from { transform: rotate(0); }
   to { transform: rotate(360deg); }
 }
+
 
 
