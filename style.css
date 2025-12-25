@@ -406,4 +406,16 @@ section {
   50% {
     transform: translateY(-8px);
   }
+
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 100px; /* reduce from 140px */
+    min-height: auto;   /* prevents extra vertical jump */
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 80px;
+  }
 }
