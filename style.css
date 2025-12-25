@@ -133,19 +133,26 @@ nav ul li a:hover {
 }
 
 /* ===== RESPONSIVE HERO ===== */
+/* ===== MOBILE HERO (ALL MOBILES) ===== */
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* single column */
     text-align: center;
   }
 
+  /* PROFILE IMAGE ON TOP */
   .hero-image {
     order: -1;
     margin-bottom: 30px;
   }
 
-  .btn {
-    margin: 12px 6px;
+  /* INCREASE FONT SIZE */
+  .hero h2 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
   }
 
   .image-frame {
@@ -653,4 +660,5 @@ section {
   from { transform: rotate(0); }
   to { transform: rotate(360deg); }
 }
+
 
