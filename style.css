@@ -885,7 +885,13 @@ section {
 
   /* Fix sticky header overlap */
   .hero {
-    padding-top: 140px;
+    /* Disable full height on mobile to prevent excessive spacing */
+    min-height: auto;
+    /* Reduce top padding (header space + visual buffer) */
+    padding-top: 120px;
+    padding-bottom: 60px;
+    align-content: start;
+    /* Align content to top */
   }
 }
 
