@@ -893,6 +893,13 @@ section {
     align-content: start;
     /* Align content to top */
   }
+
+  /* Reorder: Image on Top */
+  .hero-image {
+    order: -1;
+    margin-bottom: 30px;
+    /* Space between image and text */
+  }
 }
 
 @media (max-width: 600px) {
