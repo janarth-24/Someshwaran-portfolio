@@ -1589,3 +1589,96 @@ section {
     right: 20px;
   }
 }
+
+/* === ENHANCED MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .nav-brand {
+    font-size: 1.2rem;
+  }
+
+  .pub-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    padding: 24px 16px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-frame {
+    width: 200px;
+  }
+
+  .pub-filter {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .about-alt-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mail-illustration,
+  .whatsapp-illustration {
+    width: 100%;
+    max-width: 250px;
+    height: 80px;
+  }
+
+  .mail-illustration i,
+  .whatsapp-illustration i {
+    font-size: 2rem;
+  }
+}
